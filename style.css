@@ -6,13 +6,13 @@
 
     --light-gray:#BDBDBD;
 
-    --red:#FF3744;
+    --yellow:#FFC422;
 
-    --blue:#3783FF;
+    --blue:#00C3E2;
 
-    --video-bg:#FFD7DA;
+    --video-bg:#FFF3D3;
 
-    --shorts-bg:#D7E6FF;
+    --shorts-bg:#CCF3F9;
 
     --arrow:#919191;
 
@@ -355,7 +355,7 @@ body {
 
 .video {
 
-    background:var(--red);
+    background:var(--yellow);
 
 }
 
@@ -666,14 +666,14 @@ body {
 
 .popup-dot.video {
 
-    background-color: #FF3744;
+    background-color: #FFC422;
 
 }
 
 
 .popup-dot.shorts {
 
-    background-color: #3783FF;
+    background-color: #00C3E2;
 
 }
 
