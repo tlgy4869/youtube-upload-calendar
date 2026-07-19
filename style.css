@@ -8,11 +8,11 @@
 
     --yellow:#FFC422;
 
-    --blue:#00C3E2;
+    --blue:#00CEED;
 
     --video-bg:#FFF3D3;
 
-    --shorts-bg:#CCF3F9;
+    --shorts-bg:#CCF5FB;
 
     --arrow:#919191;
 
@@ -673,7 +673,7 @@ body {
 
 .popup-dot.shorts {
 
-    background-color: #00C3E2;
+    background-color: #00CEED;
 
 }
 
