@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>유튜브 업로드 관리</title>
+
+
+    <!-- Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin
+        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <header class="topbar">
+
+
+        <h1 class="page-title">
+            유튜브 업로드 관리
+        </h1>
+
+
+        <a class="profile" href="https://www.youtube.com/channel/UCbOPUOzzwKgG8uTawmDHdWA" target="_blank">
+
+            <img src="images/profile.png" alt="유튜브 채널">
+
+        </a>
+
+
+    </header>
+
+
+
+
+
+    <main class="container">
+
+
+        <!-- 월 이동 영역 -->
+
+        <section class="calendar-header">
+
+
+            <button class="month-button" id="prev-month">
+                ◀
+            </button>
+
+
+            <h2 class="calendar-title" id="calendar-title">
+                2026년 7월
+            </h2>
+
+
+            <button class="month-button" id="next-month">
+                ▶
+            </button>
+
+
+        </section>
+
+
+
+
+
+
+        <!-- 캘린더 -->
+
+
+        <section class="calendar">
+
+
+
+            <!-- 요일 -->
+
+            <div class="weekdays">
+
+                <div>일</div>
+                <div>월</div>
+                <div>화</div>
+                <div>수</div>
+                <div>목</div>
+                <div>금</div>
+                <div>토</div>
+
+            </div>
+
+
+
+            <!-- 날짜 영역 -->
+
+            <div class="days" id="calendar-days">
+
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+        <!-- 통계 -->
+
+
+        <section class="statistics">
+
+
+            <div class="total-count">
+
+
+                <span class="chart-icon">
+                    📊
+                </span>
+
+
+                <span id="total-count">
+                    총 0개
+                </span>
+
+
+            </div>
+
+
+
+
+
+            <div class="category-count">
+
+
+
+                <div class="category-box video-box">
+
+
+                    <span>
+                        동영상
+                    </span>
+
+
+                    <strong id="video-count">
+                        0
+                    </strong>
+
+
+                </div>
+
+
+
+
+
+
+                <div class="category-box shorts-box">
+
+
+                    <span>
+                        Shorts
+                    </span>
+
+
+                    <strong id="shorts-count">
+                        0
+                    </strong>
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+    </main>
+
+
+
+
+
+
+
+
+    <!-- 업로드 정보 팝업 -->
+
+    <div class="popup-overlay" id="popup-overlay">
+
+
+        <div class="upload-popup">
+
+
+            <button class="popup-close" id="popup-close">
+                ×
+            </button>
+
+
+            <h3 class="popup-title" id="popup-title">
+                2026년 7월 3일 업로드
+            </h3>
+
+
+            <div class="popup-content" id="popup-content">
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,716 @@
+:root {
+
+    --black:#212121;
+
+    --gray:#EEEEEE;
+
+    --light-gray:#BDBDBD;
+
+    --red:#FF3744;
+
+    --blue:#3783FF;
+
+    --video-bg:#FFD7DA;
+
+    --shorts-bg:#D7E6FF;
+
+    --arrow:#919191;
+
+    --max-width:1400px;
+
+}
+
+
+/* 기본 설정 */
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+body {
+
+    font-family:Pretendard, sans-serif;
+
+    background:#ffffff;
+
+    color:var(--black);
+
+}
+
+
+
+
+
+/* =====================
+   상단바
+===================== */
+
+
+.topbar {
+
+    height:56px;
+
+    max-width:var(--max-width);
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+.page-title {
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+
+.profile {
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    overflow:hidden;
+
+    display:block;
+
+}
+
+
+
+.profile img {
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   전체 영역
+===================== */
+
+
+.container {
+
+    max-width:var(--max-width);
+
+    margin:0 auto;
+
+    padding:0 20px;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   월 이동
+===================== */
+
+
+.calendar-header {
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+
+
+.calendar-title {
+
+    font-size:16px;
+
+    font-weight:600;
+
+}
+
+
+
+.month-button {
+
+    width:24px;
+
+    height:24px;
+
+    border:none;
+
+    border-radius:6px;
+
+    background:#F5F5F5;
+
+    color:var(--arrow);
+
+    font-size:11px;
+
+    font-weight:600;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   캘린더
+===================== */
+
+
+.weekdays {
+
+    height:32px;
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+
+.weekdays div {
+
+    font-size:12px;
+
+    font-weight:500;
+
+}
+
+
+
+
+
+
+.days {
+
+    display:grid;
+
+    grid-template-columns:repeat(7,1fr);
+
+}
+
+
+
+.day {
+
+    height:72px;
+
+    border-top:1px solid var(--gray);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    padding-top:8px;
+    
+    cursor: pointer;
+
+}
+
+
+
+.date {
+
+    font-size:14px;
+
+    font-weight:500;
+
+    line-height:24px;
+
+}
+
+
+
+
+
+.today .date {
+
+
+    width:28px;
+
+    height:28px;
+
+    border-radius:8px;
+
+    background:var(--black);
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+
+
+
+
+/* =====================
+   업로드 원
+===================== */
+
+
+.upload-dots {
+
+
+    margin-top:5px;
+
+
+    display:flex;
+
+
+    flex-wrap:wrap;
+
+
+    justify-content:center;
+
+
+    gap:4px;
+
+
+    max-width:30px;
+
+
+}
+
+
+
+.dot {
+
+
+    width:6px;
+
+
+    height:6px;
+
+
+    border-radius:50%;
+
+
+}
+
+
+
+.video {
+
+    background:var(--red);
+
+}
+
+
+
+.shorts {
+
+    background:var(--blue);
+
+}
+
+
+
+.other-month {
+    color: #bdbdbd;
+}
+
+
+
+/* =====================
+   통계
+===================== */
+
+
+.statistics {
+
+    margin-top:24px;
+
+}
+
+
+
+.total-count {
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    gap:6px;
+
+
+    font-size:15px;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+.chart-icon {
+
+    font-size:16px;
+
+}
+
+
+
+
+
+
+.category-count {
+
+
+    margin-top:14px;
+
+
+    display:flex;
+
+
+    justify-content:flex-start;
+
+
+    gap:12px;
+
+
+}
+
+
+
+
+
+.category-box {
+
+
+    height:32px;
+
+
+    padding:0 12px;
+
+
+    border-radius:8px;
+
+
+    display:flex;
+
+
+    align-items:center;
+
+
+    justify-content:center;
+
+
+    gap:8px;
+
+
+    font-size:13px;
+
+
+    font-weight:500;
+
+
+}
+
+
+
+
+
+.category-box strong {
+
+
+    font-size:14px;
+
+
+    font-weight:600;
+
+
+}
+
+
+
+.video-box {
+
+
+    background:var(--video-bg);
+
+
+}
+
+
+
+.shorts-box {
+
+
+    background:var(--shorts-bg);
+
+
+}
+
+/* ============================
+   업로드 팝업
+============================ */
+
+
+.popup-overlay {
+
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+
+    background: rgba(0,0,0,0.35);
+
+
+    display: none;
+
+
+    justify-content: center;
+
+    align-items: center;
+
+
+    z-index: 1000;
+
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.upload-popup {
+
+
+    width: 320px;
+
+
+    background: #ffffff;
+
+
+    border-radius: 16px;
+
+
+    padding: 24px;
+
+
+    position: relative;
+
+
+}
+
+
+
+.popup-close {
+
+
+    position: absolute;
+
+
+    top: 12px;
+
+    right: 16px;
+
+
+    border: none;
+
+
+    background: none;
+
+
+    font-size: 24px;
+
+
+    color: #212121;
+
+
+    cursor: pointer;
+
+
+}
+
+
+
+.popup-title {
+
+
+    font-size: 18px;
+
+
+    font-weight: 600;
+
+
+    color: #212121;
+
+
+    margin-bottom: 20px;
+
+
+}
+
+
+
+.popup-content {
+
+
+    display: flex;
+
+
+    flex-direction: column;
+
+
+    gap: 12px;
+
+
+}
+
+
+.popup-overlay.active {
+    display: flex !important;
+}
+
+
+/* popup upload item */
+
+.popup-item {
+    margin-bottom: 16px;
+}
+
+
+.popup-info {
+
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+}
+
+
+.popup-dot {
+
+    width: 6px;
+    height: 6px;
+
+    border-radius: 50%;
+
+    flex-shrink: 0;
+
+}
+
+
+.popup-dot.video {
+
+    background-color: #FF3744;
+
+}
+
+
+.popup-dot.shorts {
+
+    background-color: #3783FF;
+
+}
+
+
+.popup-time {
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    color: #212121;
+
+}
+
+
+.popup-video-title {
+
+    margin-top: 4px;
+
+    font-size: 14px;
+
+    color: #212121;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+
+}
+
+/* popup title divider */
+
+.popup-title {
+
+    padding-bottom: 16px;
+
+    border-bottom: 1px solid #eeeeee;
+
+}
